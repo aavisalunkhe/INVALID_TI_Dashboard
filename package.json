@@ -1,0 +1,32 @@
+{
+    "name": "invalid",
+    "version": "1.0.0",
+    "description": "dashboard by team invalid",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "server": "nodemon server/server.js",
+        "client": "cd client && npm run dev",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+        "build": "cd client && npm run build"
+    },
+    "keywords": [
+        "mern",
+        "react",
+        "express",
+        "mongodb",
+        "dashboard",
+        "mlb",
+        "baseball"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^10.4.21",
+        "concurrently": "^8.2.2",
+        "nodemon": "^3.1.9",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.0.17"
+    }
+}
